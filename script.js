@@ -12,7 +12,7 @@ function palindrome(str){
 }
 
 
-//const str = prompt('Enter a string: ');
+const str = prompt('Enter a string: ');
 
 const value = palindrome(str);
 
