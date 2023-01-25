@@ -12,7 +12,7 @@ newStr = str.replace(/[^a-zA-Z0-9]/g, '');
 }
 
 
-//const str = prompt('Enter a string: ');
+const str = prompt('Enter a string: ');
 
 const value = palindrome(str);
 
