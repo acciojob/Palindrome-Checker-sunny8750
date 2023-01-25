@@ -1,14 +1,13 @@
 // complete the given function
 
-function palindrome(str){
-
-    let len = str.length;
-    for (let i = 0; i < len / 2; i++) {
-        if (str[i] !== str[len - 1 - i]) {
-            return 'false' ;
-        }
-    }
-    return 'true';
+function palindrome(str) {
+  let newStr = str.replace(/\W/g, '');
+  newStr = newStr.replace('_', '').toLowerCase();
+  let revStr = newStr.split('').reverse().join('');
+  if(newStr === revStr){
+    return true;
+  }
+  return false;
 }
 
 
